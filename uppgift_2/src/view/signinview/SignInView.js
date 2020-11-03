@@ -9,6 +9,7 @@ export const SignInView = () => {
     const [loginPassword, setLoginPassword] = useState()
     const [loggedInUser, setLoggedinUser] = useContext(UserContext)
 
+
     const login = () => {
         setLoggedinUser(loginEmail)
         localStorage.setItem('email', loginEmail)
